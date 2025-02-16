@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Helios</title>
+
+    <meta name="title" content="GG Helios">
+    <meta name="description" content="Join GG Helios as we dominate the E-Sports arena, primarily in Valorant and other thrilling games.">
+    <meta property="og:title" content="GG Helios - Premier E-Sports Team">
+    <meta property="og:description" content="Join GG Helios as we dominate the E-Sports arena, primarily in Valorant and other thrilling games.">
+   
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Header */
+        .navbar {
+            background: rgba(15, 15, 15, 0.95);
+            padding: 20px 0;
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #dddddd;
+        }
+        .contact-btn {
+            border: 2px solid white;
+            padding: 5px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background: #ffffff;
+            border-color: #ffffff;
+            color: black;
+        }
+
+        /* Hero Section */
+        /* .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        } */
+  
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin-top: 90px; /* Adjust this based on the navbar height */
+        }
+
+        .carousel-item video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .hero-content {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+        }
+         /* Gaming Section */
+         .gaming-section {
+            background: #1a1a1a;
+            padding: 80px 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .gaming-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .game-card {
+            background: #242424;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            transition: 0.3s;
+        }
+        .game-card:hover {
+            background: #dddddd;
+            color: black;
+        }
+
+        /* Footer */
+        .footer {
+            background: #131313;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .footer-links a:hover {
+            color: #dddddd;
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        /* @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .carousel-item video {
+                height: auto;
+            }
+        } */
+        @media (max-width: 768px) {
+            .hero {
+                height: 80vh; /* Reduce height on smaller screens */
+                margin-top: 60px; /* Adjust based on navbar */
+            }
+            .carousel-item video {
+                height: auto;
+                min-height: 80vh; /* Ensures the video still fills the section */
+            }
+            .hero-content {
+                width: 90%; /* Reduce width for better mobile spacing */
+                padding: 10px;
+            }
+            .hero-content h1 {
+                font-size: 2rem; /* Reduce font size */
+            }
+            .hero-content p {
+                font-size: 1rem; /* Reduce font size */
+            }
+            .btn {
+                padding: 10px 20px; /* Adjust button size */
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">GG HELIOS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link contact-btn" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Carousel -->
+    <section class="hero">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/media/media 1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/media/media 2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/media/media 3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div class="hero-content">
+            <h1>GG HELIOS</h1>
+            <p class="btn btn-danger">Rise. Dominate. Conquer.</p>
+            <!-- <a href="#about" class="btn btn-danger">Explore More</a> -->
+        </div>
+    </section>
+      <!-- Gaming Section -->
+    <section class="gaming-section">
+        <div class="container">
+            <h2>Join the battle with GG Helios!</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="game-card p-3">
+                        <h4>Valorant Team</h4>
+                        <p>Compete with the best in Valorant tournaments.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="game-card p-3">
+                        <h4>Game Analysis</h4>
+                        <p>Gain insights from our expert game analysts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="game-card p-3">
+                        <h4>Community Engagement</h4>
+                        <p>Connect with fans and fellow gamers through our community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Careers</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> GG Helios. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/custom/home.min.js"></script>
+  
+</body>
+</html>
